@@ -117,7 +117,7 @@ zshrc_template() {
 export LANG='en_US.UTF-8'
 export LANGUAGE='en_US:en'
 export LC_ALL='en_US.UTF-8'
-export TERM=xterm
+export TERM=xterm-256color
 
 ##### Zsh/Oh-my-Zsh Configuration
 export ZSH="$_HOME/.oh-my-zsh"
@@ -148,7 +148,7 @@ cd /tmp
 
 # Install On-My-Zsh
 if [ ! -d "$HOME"/.oh-my-zsh ]; then
-    sh -c "$(curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
 # Generate plugin list
